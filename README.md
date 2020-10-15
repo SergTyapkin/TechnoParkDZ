@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/SergTyapkin/TechnoParkDZ.svg?branch=main)](https://travis-ci.org/SergTyapkin/TechnoParkDZ)
 Решение Индивидуального задания №1.
 
 Условие. Вариант #76:

@@ -36,6 +36,11 @@ START_TEST(string_lib_test) {
     fail_unless(str2->len == 20, "string_lib_test2");
     fail_unless(str3->len == 10, "string_lib_test3");
     fail_unless(str4->len == 0, "string_lib_test3");
+
+    deleteString(str1);
+    deleteString(str2);
+    deleteString(str3);
+    deleteString(str4);
 } END_TEST
 
 START_TEST(array_lib_test) {
@@ -75,6 +80,11 @@ START_TEST(array_lib_test) {
     fail_unless(arr2->len == 4, "array_lib_test2");
     fail_unless(arr3->len == 5, "array_lib_test3");
     fail_unless(arr4->len == 0, "array_lib_test4");
+
+    deleteArray(arr1);
+    deleteArray(arr2);
+    deleteArray(arr3);
+    deleteArray(arr4);
 } END_TEST
 
 START_TEST(make_tokens_test) {
@@ -100,10 +110,16 @@ START_TEST(make_tokens_test) {
     makeTokens(pattern5, tokens5);
 
     fail_unless(tokens1->len == 4, "make_tokens_test1");
-    fail_unless(tokens1->len == 1, "make_tokens_test2");
-    fail_unless(tokens1->len == 3, "make_tokens_test3");
-    fail_unless(tokens1->len == 4, "make_tokens_test4");
-    fail_unless(tokens1->len == 2, "make_tokens_test5");
+    fail_unless(tokens2->len == 1, "make_tokens_test2");
+    fail_unless(tokens3->len == 3, "make_tokens_test3");
+    fail_unless(tokens4->len == 4, "make_tokens_test4");
+    fail_unless(tokens5->len == 2, "make_tokens_test5");
+
+    deleteArray(tokens1);
+    deleteArray(tokens2);
+    deleteArray(tokens3);
+    deleteArray(tokens4);
+    deleteArray(tokens5);
 } END_TEST
 
 START_TEST(wild_find_test) {

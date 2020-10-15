@@ -8,13 +8,14 @@
 На экран вывести изменённый текст, а также количество заменённых слов.
 */
 
+//C:\CodeBlocks\MinGW\bin\gcc.exe main.c String.c Array.c WildMatch.c -ll
 #include <stdio.h>
+#include "WildMatch.h"
 #include "String.h"
 #include "Array.h"
-#include "WildMatch.h"
 
 int main() {
-    String *pattern, *replace, *word;
+    String *pattern, *replace;
     Array *tokens, *text;
 
     printf("Enter wildcard-find: ");
